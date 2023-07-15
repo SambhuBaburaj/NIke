@@ -1,0 +1,317 @@
+*{padding:0;
+margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0e0e;
+    position: relative;
+    overflow-x: hidden;
+}
+Nav{
+width: 100%;
+height: 100px;
+position: fixed;
+top: 0;
+right: 0;
+padding: 0 80px;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: right;
+gap: 50px;
+z-index: 1;
+color: aliceblue;
+}
+.search-container {
+    position: relative;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    width: 200px;
+  }
+  
+  .search-container button[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+  }
+  .circlecl {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  .choosecolour{
+    display: flex;
+    gap: 5px;
+    color: white;
+  }
+  .text{
+    color: white;
+  }
+  .Productdetail{
+    position: absolute;
+    padding: 50px;
+  }
+  .red-button {
+    margin-top: 20px;
+    background-color: rgb(214, 62, 62);
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .red-button:hover {
+    background-color: darkred;
+  }
+  a { color: white;
+ }
+ a:hover{
+    color: rgb(147, 144, 144);
+ }
+ .nike{
+    font-size: 500px;
+    color: #827e7e;
+    opacity: 0.15;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(rgb(158, 158, 158), rgb(44, 38, 38));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .shoeimage
+ {
+    height: 800px;
+    border-radius: 50px;
+    transform: rotate(-35deg);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 0;
+
+ }
+.gradient-wrapper {
+  padding: 30px;
+  border-radius: 60%;
+  display: inline-block;
+  background: #1b1a1a; /* As fallback for browsers which do not support gradient */
+
+}
+
+.outer-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #0e0e0e;
+  position: relative;
+}
+
+.inner-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #131212, #f0ece6);
+  position: relative;
+  overflow: hidden;
+}
+
+#maincircle {
+  width: 80%;
+  height: 80%;
+  background: #1b1a1a;;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.left{
+width: 200px;
+
+  
+   
+  position: absolute;
+  top: 346px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end;
+  justify-content: center; */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.left .bluecol{
+  width: 70px;
+  margin: 20px 0;
+   border-radius: 50px;
+ 
+}
+.left .bluecol{
+  width: 100px;
+  
+  
+}
+
+
+
+.circle {
+  width: 300px;
+  height: 300px;
+  display: inline-flex;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  position: relative; will-change: top, left; left: 518px; top: -364px;
+}
+
+.menu {
+  --d:120px; /* distance from the center */
+  --i:30deg; /* the increment */
+  list-style-type: none;
+  padding: 0;
+  display:grid; /* use grid */
+  margin:auto; /* center the menu with all the items */
+}
+
+.menu li {
+  grid-area:1/1; /* all of them at the same position (they overlap) */
+  /* we rotate then translate to the edge then rotate again using the opposite rotation */
+  transform:rotate(var(--r)) translateX(var(--d)) rotate(calc(-1*var(--r)));
+}
+
+/* adjust the angle for each icon */
+.menu li:nth-child(1) { --r: calc( 5*var(--i))} 
+.menu li:nth-child(2) { --r: calc( 3*var(--i))} 
+.menu li:nth-child(3) { --r: calc( 4*var(--i))} 
+
+
+.menu li a {
+  display: block;
+}
+.menu li a img {
+  width: 50px;
+}
+.color:hover{
+  position: absolute;
+  border: solid 5px rgb(41, 39, 39);
+  transition: .15s;
+  border-radius: 50%;
+ 
+}
+
+
+.tilted-line {
+  position: absolute;
+  width: 250px;
+  height: 4px;
+  overflow: visible;
+  position: absolute;
+  top: 550px;
+  left: 780px;
+
+  background:rgb(19, 19, 171);
+
+  transform: skewY(-36deg);
+  border-radius: 100%;
+  transform-origin: top left;
+  border-top-left-radius: 50%;
+border-top-right-radius: 20px;
+box-shadow: 0 0 20px 2px #3c08e9;
+
+opacity: 70%;
+}
+
+
+
+.tilted-line2 {
+  position: absolute;
+  width: 250px;
+  height: 4px;
+  overflow: visible;
+  content: '';
+  position: absolute;
+  top: 650px;
+  left: 605px;
+  
+  background:rgb(19, 19, 171);
+  transform: skewY(-36deg);
+  border-radius: 100%;
+  transform-origin: top left;
+  border-top-left-radius: 50%;
+border-top-right-radius: 20px;
+box-shadow: 0 0 20px 2px #3c08e9;
+opacity: 70%;
+}
+
+.tilted-line2::before {
+
+
+}
+
+.tilted-line3 {
+  position: absolute;
+  width: 250px;
+  height: 4px;
+  overflow: visible;
+  position: absolute;
+  top: 455px;
+  left: 880px;
+
+  background:rgb(19, 19, 171);
+  transform: skewY(-36deg);
+  border-radius: 100%;
+  transform-origin: top left;
+  border-top-left-radius: 50%;
+border-top-right-radius: 20px;
+box-shadow: 0 0 20px 2px #3c08e9;
+opacity: 70%;
+}
+
+.tilted-line3::before {
+  content: '';
+
+
+}
